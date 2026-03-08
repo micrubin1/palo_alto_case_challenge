@@ -2,9 +2,10 @@
 
 A career navigator that ranks skill gaps by market demand momentum — not just frequency — so candidates know which gaps to close first.
 
-**Candidate:** Micah Rubin
-**Scenario:** Skill-Bridge Career Navigator
-**Estimated Time Spent:** 4 hours
+**Candidate:** Micah Rubin. 
+**Scenario:** Skill-Bridge Career Navigator. 
+**Estimated Time Spent:** 4 hours. 
+**Video Link::** https://www.youtube.com/watch?v=YFc9DXSGLL0. 
 
 ---
 
