@@ -1,0 +1,1470 @@
+[
+  {
+    "id": "jp_001",
+    "title": "Cloud Security Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Kubernetes",
+      "Zero Trust Architecture",
+      "Python",
+      "Cloud Security Posture Management (CSPM)",
+      "AWS",
+      "Terraform"
+    ],
+    "nice_to_have_skills": [
+      "AI/ML Security",
+      "SIEM Tools",
+      "Docker",
+      "Go"
+    ],
+    "posted_month": 11,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_002",
+    "title": "DevSecOps Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Kubernetes",
+      "Python",
+      "Docker",
+      "CI/CD Pipelines",
+      "Terraform"
+    ],
+    "nice_to_have_skills": [
+      "Zero Trust Architecture",
+      "SIEM Tools",
+      "AWS",
+      "Bash Scripting",
+      "Cloud Security Posture Management (CSPM)"
+    ],
+    "posted_month": 10,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_003",
+    "title": "SOC Analyst",
+    "company_type": "enterprise",
+    "required_skills": [
+      "SIEM Tools",
+      "Python",
+      "Incident Response",
+      "Network Security",
+      "Log Analysis"
+    ],
+    "nice_to_have_skills": [
+      "AI/ML Security",
+      "Cloud Security Posture Management (CSPM)",
+      "Splunk",
+      "Threat Intelligence",
+      "Perl"
+    ],
+    "posted_month": 12,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_004",
+    "title": "Cloud Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Kubernetes",
+      "AWS",
+      "Terraform",
+      "Python",
+      "Linux Administration"
+    ],
+    "nice_to_have_skills": [
+      "Cloud Security Posture Management (CSPM)",
+      "Docker",
+      "Ansible",
+      "Monitoring Tools",
+      "ITIL Certification"
+    ],
+    "posted_month": 9,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_005",
+    "title": "Cloud Security Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Zero Trust Architecture",
+      "Cloud Security Posture Management (CSPM)",
+      "Kubernetes",
+      "Python",
+      "IAM"
+    ],
+    "nice_to_have_skills": [
+      "SIEM Tools",
+      "Compliance Frameworks",
+      "Penetration Testing",
+      "AI/ML Security"
+    ],
+    "posted_month": 11,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_006",
+    "title": "DevSecOps Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Python",
+      "Kubernetes",
+      "SIEM Tools",
+      "CI/CD Pipelines",
+      "Static Code Analysis"
+    ],
+    "nice_to_have_skills": [
+      "Zero Trust Architecture",
+      "AI/ML Security",
+      "Terraform",
+      "Container Security",
+      "CVS Version Control"
+    ],
+    "posted_month": 10,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_007",
+    "title": "SOC Analyst",
+    "company_type": "mid-size",
+    "required_skills": [
+      "SIEM Tools",
+      "Incident Response",
+      "Network Security",
+      "Python",
+      "Threat Hunting"
+    ],
+    "nice_to_have_skills": [
+      "AI/ML Security",
+      "Cloud Security Posture Management (CSPM)",
+      "Forensics",
+      "Malware Analysis",
+      "On-Premise Firewall Management"
+    ],
+    "posted_month": 12,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_008",
+    "title": "Cloud Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Kubernetes",
+      "Zero Trust Architecture",
+      "AWS",
+      "Terraform",
+      "Python"
+    ],
+    "nice_to_have_skills": [
+      "Cloud Security Posture Management (CSPM)",
+      "Monitoring Tools",
+      "Go",
+      "Microservices Architecture",
+      "Perl",
+      "ITIL Certification"
+    ],
+    "posted_month": 8,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_009",
+    "title": "Cloud Security Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Cloud Security Posture Management (CSPM)",
+      "Kubernetes",
+      "AI/ML Security",
+      "Python",
+      "AWS"
+    ],
+    "nice_to_have_skills": [
+      "Zero Trust Architecture",
+      "SIEM Tools",
+      "Encryption Protocols",
+      "Risk Assessment"
+    ],
+    "posted_month": 9,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_010",
+    "title": "DevSecOps Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Kubernetes",
+      "Python",
+      "Zero Trust Architecture",
+      "Docker",
+      "Git"
+    ],
+    "nice_to_have_skills": [
+      "SIEM Tools",
+      "AI/ML Security",
+      "Infrastructure as Code",
+      "Agile Methodologies"
+    ],
+    "posted_month": 12,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_011",
+    "title": "SOC Analyst",
+    "company_type": "enterprise",
+    "required_skills": [
+      "SIEM Tools",
+      "Python",
+      "AI/ML Security",
+      "Log Analysis",
+      "Incident Response"
+    ],
+    "nice_to_have_skills": [
+      "Kubernetes",
+      "Cloud Security Posture Management (CSPM)",
+      "Threat Intelligence",
+      "SOAR Platforms",
+      "On-Premise Firewall Management",
+      "CVS Version Control"
+    ],
+    "posted_month": 10,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_012",
+    "title": "Cloud Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Kubernetes",
+      "Python",
+      "AWS",
+      "Cloud Security Posture Management (CSPM)",
+      "Docker"
+    ],
+    "nice_to_have_skills": [
+      "Zero Trust Architecture",
+      "Terraform",
+      "Serverless Architecture",
+      "Cost Optimization"
+    ],
+    "posted_month": 11,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_013",
+    "title": "Cloud Security Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Zero Trust Architecture",
+      "SIEM Tools",
+      "Kubernetes",
+      "Python",
+      "Compliance Frameworks"
+    ],
+    "nice_to_have_skills": [
+      "AI/ML Security",
+      "Cloud Security Posture Management (CSPM)",
+      "Penetration Testing",
+      "SOC Operations"
+    ],
+    "posted_month": 8,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_014",
+    "title": "DevSecOps Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Python",
+      "Kubernetes",
+      "AI/ML Security",
+      "CI/CD Pipelines",
+      "Terraform"
+    ],
+    "nice_to_have_skills": [
+      "Zero Trust Architecture",
+      "SIEM Tools",
+      "Vulnerability Scanning",
+      "OWASP"
+    ],
+    "posted_month": 9,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_015",
+    "title": "SOC Analyst",
+    "company_type": "startup",
+    "required_skills": [
+      "SIEM Tools",
+      "Python",
+      "Network Security",
+      "Incident Response",
+      "Cloud Security Posture Management (CSPM)"
+    ],
+    "nice_to_have_skills": [
+      "AI/ML Security",
+      "Kubernetes",
+      "Endpoint Detection",
+      "Vulnerability Management",
+      "Perl",
+      "ITIL Certification"
+    ],
+    "posted_month": 12,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_016",
+    "title": "Cloud Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Kubernetes",
+      "Zero Trust Architecture",
+      "Python",
+      "AWS",
+      "Terraform"
+    ],
+    "nice_to_have_skills": [
+      "Cloud Security Posture Management (CSPM)",
+      "AI/ML Security",
+      "Helm",
+      "Service Mesh"
+    ],
+    "posted_month": 10,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_017",
+    "title": "Cloud Security Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Cloud Security Posture Management (CSPM)",
+      "Python",
+      "AI/ML Security",
+      "Zero Trust Architecture",
+      "AWS"
+    ],
+    "nice_to_have_skills": [
+      "Kubernetes",
+      "SIEM Tools",
+      "Data Loss Prevention",
+      "Identity Federation"
+    ],
+    "posted_month": 11,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_018",
+    "title": "DevSecOps Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Kubernetes",
+      "SIEM Tools",
+      "Python",
+      "Docker",
+      "Static Code Analysis"
+    ],
+    "nice_to_have_skills": [
+      "Zero Trust Architecture",
+      "AI/ML Security",
+      "SonarQube",
+      "Jenkins"
+    ],
+    "posted_month": 8,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_019",
+    "title": "SOC Analyst",
+    "company_type": "mid-size",
+    "required_skills": [
+      "SIEM Tools",
+      "AI/ML Security",
+      "Python",
+      "Threat Hunting",
+      "Incident Response"
+    ],
+    "nice_to_have_skills": [
+      "Kubernetes",
+      "Cloud Security Posture Management (CSPM)",
+      "Forensics",
+      "Regex",
+      "CVS Version Control",
+      "On-Premise Firewall Management"
+    ],
+    "posted_month": 9,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_020",
+    "title": "Cloud Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Kubernetes",
+      "Python",
+      "Cloud Security Posture Management (CSPM)",
+      "Terraform",
+      "Linux Administration"
+    ],
+    "nice_to_have_skills": [
+      "SIEM Tools",
+      "Zero Trust Architecture",
+      "Prometheus",
+      "Grafana",
+      "Perl"
+    ],
+    "posted_month": 12,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_021",
+    "title": "Cloud Security Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Zero Trust Architecture",
+      "Kubernetes",
+      "SIEM Tools",
+      "Python",
+      "Cloud Security Posture Management (CSPM)"
+    ],
+    "nice_to_have_skills": [
+      "AI/ML Security",
+      "Penetration Testing",
+      "GCP",
+      "Azure"
+    ],
+    "posted_month": 10,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_022",
+    "title": "DevSecOps Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Python",
+      "Kubernetes",
+      "Zero Trust Architecture",
+      "CI/CD Pipelines",
+      "Git"
+    ],
+    "nice_to_have_skills": [
+      "SIEM Tools",
+      "Cloud Security Posture Management (CSPM)",
+      "AI/ML Security",
+      "Snyk"
+    ],
+    "posted_month": 11,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_023",
+    "title": "SOC Analyst",
+    "company_type": "enterprise",
+    "required_skills": [
+      "SIEM Tools",
+      "Python",
+      "Incident Response",
+      "AI/ML Security",
+      "Log Analysis"
+    ],
+    "nice_to_have_skills": [
+      "Zero Trust Architecture",
+      "Kubernetes",
+      "Threat Intelligence",
+      "SOAR Platforms",
+      "ITIL Certification"
+    ],
+    "posted_month": 8,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_024",
+    "title": "Cloud Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Kubernetes",
+      "Python",
+      "AWS",
+      "Docker",
+      "Zero Trust Architecture"
+    ],
+    "nice_to_have_skills": [
+      "Cloud Security Posture Management (CSPM)",
+      "Terraform",
+      "Serverless Architecture",
+      "API Gateway"
+    ],
+    "posted_month": 9,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_025",
+    "title": "Cloud Security Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Cloud Security Posture Management (CSPM)",
+      "Kubernetes",
+      "Python",
+      "SIEM Tools",
+      "IAM"
+    ],
+    "nice_to_have_skills": [
+      "AI/ML Security",
+      "Zero Trust Architecture",
+      "Compliance Frameworks",
+      "Risk Assessment"
+    ],
+    "posted_month": 12,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_026",
+    "title": "DevSecOps Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Python",
+      "Kubernetes",
+      "AI/ML Security",
+      "Docker",
+      "Terraform"
+    ],
+    "nice_to_have_skills": [
+      "SIEM Tools",
+      "Zero Trust Architecture",
+      "Container Security",
+      "HashiCorp Vault"
+    ],
+    "posted_month": 10,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_027",
+    "title": "SOC Analyst",
+    "company_type": "mid-size",
+    "required_skills": [
+      "SIEM Tools",
+      "Python",
+      "Network Security",
+      "Threat Hunting",
+      "Cloud Security Posture Management (CSPM)"
+    ],
+    "nice_to_have_skills": [
+      "AI/ML Security",
+      "Kubernetes",
+      "Endpoint Detection",
+      "Packet Analysis",
+      "On-Premise Firewall Management"
+    ],
+    "posted_month": 11,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_028",
+    "title": "Cloud Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Kubernetes",
+      "Zero Trust Architecture",
+      "Python",
+      "Terraform",
+      "AWS"
+    ],
+    "nice_to_have_skills": [
+      "Cloud Security Posture Management (CSPM)",
+      "SIEM Tools",
+      "Helm",
+      "ArgoCD"
+    ],
+    "posted_month": 8,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_029",
+    "title": "Cloud Security Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Zero Trust Architecture",
+      "Cloud Security Posture Management (CSPM)",
+      "Python",
+      "AI/ML Security",
+      "Kubernetes"
+    ],
+    "nice_to_have_skills": [
+      "SIEM Tools",
+      "Encryption Protocols",
+      "Penetration Testing",
+      "Bug Bounty"
+    ],
+    "posted_month": 9,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_030",
+    "title": "DevSecOps Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Python",
+      "SIEM Tools",
+      "Kubernetes",
+      "CI/CD Pipelines",
+      "Git"
+    ],
+    "nice_to_have_skills": [
+      "Zero Trust Architecture",
+      "AI/ML Security",
+      "OWASP",
+      "Trivy",
+      "Perl",
+      "CVS Version Control"
+    ],
+    "posted_month": 12,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_031",
+    "title": "Cloud Security Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Perl",
+      "On-Premise Firewall Management",
+      "Network Security",
+      "CVS Version Control",
+      "ITIL Certification"
+    ],
+    "nice_to_have_skills": [
+      "Incident Response",
+      "Log Analysis",
+      "Compliance Frameworks",
+      "Patch Management"
+    ],
+    "posted_month": 2,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_032",
+    "title": "SOC Analyst",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Perl",
+      "On-Premise Firewall Management",
+      "ITIL Certification",
+      "Incident Response",
+      "Network Security"
+    ],
+    "nice_to_have_skills": [
+      "CVS Version Control",
+      "Log Analysis",
+      "Ticketing Systems",
+      "Patch Management"
+    ],
+    "posted_month": 1,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_033",
+    "title": "Cloud Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Perl",
+      "CVS Version Control",
+      "On-Premise Firewall Management",
+      "Linux Administration",
+      "Bash Scripting"
+    ],
+    "nice_to_have_skills": [
+      "ITIL Certification",
+      "Nagios",
+      "DNS Management",
+      "LDAP"
+    ],
+    "posted_month": 3,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_034",
+    "title": "DevSecOps Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Perl",
+      "ITIL Certification",
+      "CVS Version Control",
+      "On-Premise Firewall Management",
+      "Static Code Analysis"
+    ],
+    "nice_to_have_skills": [
+      "Patch Management",
+      "Compliance Frameworks",
+      "Change Management",
+      "SNMP"
+    ],
+    "posted_month": 2,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_035",
+    "title": "SOC Analyst",
+    "company_type": "mid-size",
+    "required_skills": [
+      "On-Premise Firewall Management",
+      "Perl",
+      "ITIL Certification",
+      "Incident Response",
+      "Log Analysis"
+    ],
+    "nice_to_have_skills": [
+      "CVS Version Control",
+      "Ticketing Systems",
+      "Network Monitoring",
+      "Vulnerability Scanning"
+    ],
+    "posted_month": 4,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_036",
+    "title": "Cloud Security Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "CVS Version Control",
+      "Perl",
+      "On-Premise Firewall Management",
+      "ITIL Certification",
+      "Compliance Frameworks"
+    ],
+    "nice_to_have_skills": [
+      "Risk Assessment",
+      "Patch Management",
+      "Audit Logging",
+      "Access Control Lists"
+    ],
+    "posted_month": 1,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_037",
+    "title": "Cloud Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Perl",
+      "On-Premise Firewall Management",
+      "CVS Version Control",
+      "Linux Administration",
+      "DNS Management"
+    ],
+    "nice_to_have_skills": [
+      "ITIL Certification",
+      "Bash Scripting",
+      "TCP/IP",
+      "VLAN Configuration"
+    ],
+    "posted_month": 3,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_038",
+    "title": "DevSecOps Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "ITIL Certification",
+      "Perl",
+      "On-Premise Firewall Management",
+      "CVS Version Control",
+      "Change Management"
+    ],
+    "nice_to_have_skills": [
+      "Compliance Frameworks",
+      "Patch Management",
+      "Nagios",
+      "Vulnerability Scanning"
+    ],
+    "posted_month": 5,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_039",
+    "title": "SOC Analyst",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Perl",
+      "ITIL Certification",
+      "On-Premise Firewall Management",
+      "Network Security",
+      "Incident Response"
+    ],
+    "nice_to_have_skills": [
+      "CVS Version Control",
+      "Log Analysis",
+      "Ticketing Systems",
+      "Forensics"
+    ],
+    "posted_month": 2,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_040",
+    "title": "Cloud Security Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "On-Premise Firewall Management",
+      "Perl",
+      "CVS Version Control",
+      "ITIL Certification",
+      "Access Control Lists"
+    ],
+    "nice_to_have_skills": [
+      "Patch Management",
+      "Risk Assessment",
+      "Compliance Frameworks",
+      "SNMP"
+    ],
+    "posted_month": 4,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_041",
+    "title": "Cloud Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Perl",
+      "CVS Version Control",
+      "On-Premise Firewall Management",
+      "ITIL Certification",
+      "Bash Scripting"
+    ],
+    "nice_to_have_skills": [
+      "Linux Administration",
+      "TCP/IP",
+      "DNS Management",
+      "Nagios"
+    ],
+    "posted_month": 1,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_042",
+    "title": "DevSecOps Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "ITIL Certification",
+      "Perl",
+      "CVS Version Control",
+      "On-Premise Firewall Management",
+      "Patch Management"
+    ],
+    "nice_to_have_skills": [
+      "Change Management",
+      "Compliance Frameworks",
+      "Vulnerability Scanning",
+      "Audit Logging"
+    ],
+    "posted_month": 3,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_043",
+    "title": "SOC Analyst",
+    "company_type": "mid-size",
+    "required_skills": [
+      "On-Premise Firewall Management",
+      "Perl",
+      "Incident Response",
+      "ITIL Certification",
+      "Network Monitoring"
+    ],
+    "nice_to_have_skills": [
+      "CVS Version Control",
+      "Ticketing Systems",
+      "Log Analysis",
+      "Patch Management"
+    ],
+    "posted_month": 5,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_044",
+    "title": "Cloud Security Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Perl",
+      "On-Premise Firewall Management",
+      "ITIL Certification",
+      "CVS Version Control",
+      "Network Security"
+    ],
+    "nice_to_have_skills": [
+      "Compliance Frameworks",
+      "Risk Assessment",
+      "Access Control Lists",
+      "Vulnerability Scanning"
+    ],
+    "posted_month": 2,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_045",
+    "title": "Cloud Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Perl",
+      "On-Premise Firewall Management",
+      "CVS Version Control",
+      "ITIL Certification",
+      "Linux Administration"
+    ],
+    "nice_to_have_skills": [
+      "Bash Scripting",
+      "TCP/IP",
+      "LDAP",
+      "DNS Management"
+    ],
+    "posted_month": 4,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_046",
+    "title": "Cloud Security Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Kubernetes",
+      "Zero Trust Architecture",
+      "Python",
+      "SIEM Tools",
+      "AI/ML Security"
+    ],
+    "nice_to_have_skills": [
+      "Cloud Security Posture Management (CSPM)",
+      "Penetration Testing",
+      "GCP",
+      "Compliance Frameworks"
+    ],
+    "posted_month": 10,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_047",
+    "title": "DevSecOps Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Python",
+      "Kubernetes",
+      "SIEM Tools",
+      "Zero Trust Architecture",
+      "Docker"
+    ],
+    "nice_to_have_skills": [
+      "AI/ML Security",
+      "Cloud Security Posture Management (CSPM)",
+      "Terraform",
+      "GitOps"
+    ],
+    "posted_month": 11,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_048",
+    "title": "SOC Analyst",
+    "company_type": "enterprise",
+    "required_skills": [
+      "SIEM Tools",
+      "AI/ML Security",
+      "Python",
+      "Incident Response",
+      "Threat Hunting"
+    ],
+    "nice_to_have_skills": [
+      "Kubernetes",
+      "Zero Trust Architecture",
+      "Forensics",
+      "SOAR Platforms",
+      "ITIL Certification"
+    ],
+    "posted_month": 12,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_049",
+    "title": "Cloud Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Kubernetes",
+      "Python",
+      "AWS",
+      "Zero Trust Architecture",
+      "Terraform"
+    ],
+    "nice_to_have_skills": [
+      "Cloud Security Posture Management (CSPM)",
+      "AI/ML Security",
+      "Helm",
+      "Istio"
+    ],
+    "posted_month": 9,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_050",
+    "title": "Cloud Security Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Cloud Security Posture Management (CSPM)",
+      "AI/ML Security",
+      "Kubernetes",
+      "Python",
+      "Zero Trust Architecture"
+    ],
+    "nice_to_have_skills": [
+      "SIEM Tools",
+      "IAM",
+      "Encryption Protocols",
+      "Compliance Frameworks"
+    ],
+    "posted_month": 8,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_051",
+    "title": "Cloud Security Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Kubernetes",
+      "Python",
+      "AWS",
+      "Network Security",
+      "Compliance Frameworks"
+    ],
+    "nice_to_have_skills": [
+      "Docker",
+      "Terraform",
+      "Penetration Testing",
+      "Risk Assessment",
+      "Perl",
+      "ITIL Certification",
+      "SIEM Tools",
+      "On-Premise Firewall Management",
+      "CVS Version Control"
+    ],
+    "posted_month": 6,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_052",
+    "title": "DevSecOps Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Python",
+      "Docker",
+      "CI/CD Pipelines",
+      "Git",
+      "Terraform"
+    ],
+    "nice_to_have_skills": [
+      "AWS",
+      "Vulnerability Scanning",
+      "OWASP",
+      "Jenkins",
+      "On-Premise Firewall Management",
+      "CVS Version Control",
+      "SIEM Tools",
+      "AI/ML Security"
+    ],
+    "posted_month": 7,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_053",
+    "title": "SOC Analyst",
+    "company_type": "startup",
+    "required_skills": [
+      "SIEM Tools",
+      "Incident Response",
+      "Network Security",
+      "Log Analysis",
+      "Threat Intelligence"
+    ],
+    "nice_to_have_skills": [
+      "Python",
+      "Forensics",
+      "Malware Analysis",
+      "Regex",
+      "Perl",
+      "ITIL Certification",
+      "Zero Trust Architecture",
+      "Cloud Security Posture Management (CSPM)",
+      "On-Premise Firewall Management"
+    ],
+    "posted_month": 6,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_054",
+    "title": "Cloud Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "AWS",
+      "Terraform",
+      "Linux Administration",
+      "Docker",
+      "Networking"
+    ],
+    "nice_to_have_skills": [
+      "Kubernetes",
+      "Python",
+      "Ansible",
+      "Monitoring Tools",
+      "On-Premise Firewall Management",
+      "Perl",
+      "CVS Version Control",
+      "SIEM Tools",
+      "Zero Trust Architecture",
+      "Cloud Security Posture Management (CSPM)"
+    ],
+    "posted_month": 5,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_055",
+    "title": "Cloud Security Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Python",
+      "AWS",
+      "IAM",
+      "Encryption Protocols",
+      "Network Security"
+    ],
+    "nice_to_have_skills": [
+      "Compliance Frameworks",
+      "Penetration Testing",
+      "Docker",
+      "Risk Assessment",
+      "ITIL Certification",
+      "CVS Version Control",
+      "Zero Trust Architecture",
+      "SIEM Tools",
+      "AI/ML Security",
+      "Cloud Security Posture Management (CSPM)",
+      "Perl",
+      "On-Premise Firewall Management"
+    ],
+    "posted_month": 7,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_056",
+    "title": "DevSecOps Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Docker",
+      "CI/CD Pipelines",
+      "Git",
+      "Bash Scripting",
+      "Linux Administration"
+    ],
+    "nice_to_have_skills": [
+      "Terraform",
+      "Python",
+      "Vulnerability Scanning",
+      "SonarQube",
+      "Perl",
+      "On-Premise Firewall Management",
+      "Zero Trust Architecture",
+      "AI/ML Security",
+      "Cloud Security Posture Management (CSPM)",
+      "CVS Version Control"
+    ],
+    "posted_month": 6,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_057",
+    "title": "SOC Analyst",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Incident Response",
+      "Network Security",
+      "Log Analysis",
+      "Threat Hunting",
+      "Endpoint Detection"
+    ],
+    "nice_to_have_skills": [
+      "SIEM Tools",
+      "Python",
+      "Forensics",
+      "Ticketing Systems",
+      "ITIL Certification",
+      "CVS Version Control",
+      "Perl",
+      "Zero Trust Architecture",
+      "AI/ML Security",
+      "Cloud Security Posture Management (CSPM)",
+      "On-Premise Firewall Management"
+    ],
+    "posted_month": 7,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_058",
+    "title": "Cloud Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "AWS",
+      "Docker",
+      "Terraform",
+      "Linux Administration",
+      "Bash Scripting"
+    ],
+    "nice_to_have_skills": [
+      "Kubernetes",
+      "Python",
+      "Serverless Architecture",
+      "Cost Optimization",
+      "On-Premise Firewall Management",
+      "ITIL Certification",
+      "Cloud Security Posture Management (CSPM)",
+      "AI/ML Security",
+      "SIEM Tools"
+    ],
+    "posted_month": 6,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_059",
+    "title": "Cloud Security Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Kubernetes",
+      "SIEM Tools",
+      "Cloud Security Posture Management (CSPM)",
+      "Zero Trust Architecture",
+      "Python"
+    ],
+    "nice_to_have_skills": [
+      "AI/ML Security",
+      "Penetration Testing",
+      "Azure",
+      "Compliance Frameworks"
+    ],
+    "posted_month": 10,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_060",
+    "title": "DevSecOps Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Python",
+      "AI/ML Security",
+      "Kubernetes",
+      "Docker",
+      "Zero Trust Architecture"
+    ],
+    "nice_to_have_skills": [
+      "SIEM Tools",
+      "Cloud Security Posture Management (CSPM)",
+      "Terraform",
+      "Snyk"
+    ],
+    "posted_month": 12,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_061",
+    "title": "SOC Analyst",
+    "company_type": "enterprise",
+    "required_skills": [
+      "SIEM Tools",
+      "Python",
+      "Cloud Security Posture Management (CSPM)",
+      "Incident Response",
+      "AI/ML Security"
+    ],
+    "nice_to_have_skills": [
+      "Kubernetes",
+      "Zero Trust Architecture",
+      "SOAR Platforms",
+      "Threat Intelligence",
+      "On-Premise Firewall Management"
+    ],
+    "posted_month": 11,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_062",
+    "title": "Cloud Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Kubernetes",
+      "Cloud Security Posture Management (CSPM)",
+      "Python",
+      "AWS",
+      "AI/ML Security"
+    ],
+    "nice_to_have_skills": [
+      "Zero Trust Architecture",
+      "SIEM Tools",
+      "Terraform",
+      "Prometheus"
+    ],
+    "posted_month": 9,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_063",
+    "title": "Cloud Security Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Perl",
+      "On-Premise Firewall Management",
+      "Python",
+      "Network Security",
+      "ITIL Certification"
+    ],
+    "nice_to_have_skills": [
+      "CVS Version Control",
+      "Compliance Frameworks",
+      "Patch Management",
+      "Risk Assessment",
+      "SIEM Tools"
+    ],
+    "posted_month": 3,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_064",
+    "title": "DevSecOps Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Perl",
+      "CVS Version Control",
+      "On-Premise Firewall Management",
+      "ITIL Certification",
+      "Bash Scripting"
+    ],
+    "nice_to_have_skills": [
+      "Patch Management",
+      "Change Management",
+      "Nagios",
+      "SNMP"
+    ],
+    "posted_month": 4,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_065",
+    "title": "SOC Analyst",
+    "company_type": "startup",
+    "required_skills": [
+      "On-Premise Firewall Management",
+      "Perl",
+      "ITIL Certification",
+      "Incident Response",
+      "Network Security"
+    ],
+    "nice_to_have_skills": [
+      "CVS Version Control",
+      "Log Analysis",
+      "Ticketing Systems",
+      "Vulnerability Scanning"
+    ],
+    "posted_month": 5,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_066",
+    "title": "Cloud Security Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "Kubernetes",
+      "Python",
+      "Zero Trust Architecture",
+      "SIEM Tools",
+      "Cloud Security Posture Management (CSPM)"
+    ],
+    "nice_to_have_skills": [
+      "AI/ML Security",
+      "GCP",
+      "Compliance Frameworks",
+      "Identity Federation"
+    ],
+    "posted_month": 8,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_067",
+    "title": "DevSecOps Engineer",
+    "company_type": "mid-size",
+    "required_skills": [
+      "Python",
+      "Kubernetes",
+      "Cloud Security Posture Management (CSPM)",
+      "AI/ML Security",
+      "CI/CD Pipelines"
+    ],
+    "nice_to_have_skills": [
+      "SIEM Tools",
+      "Zero Trust Architecture",
+      "Terraform",
+      "Container Security"
+    ],
+    "posted_month": 11,
+    "seniority": "senior"
+  },
+  {
+    "id": "jp_068",
+    "title": "SOC Analyst",
+    "company_type": "enterprise",
+    "required_skills": [
+      "SIEM Tools",
+      "Python",
+      "AI/ML Security",
+      "Zero Trust Architecture",
+      "Incident Response"
+    ],
+    "nice_to_have_skills": [
+      "Kubernetes",
+      "Cloud Security Posture Management (CSPM)",
+      "Threat Hunting",
+      "Forensics"
+    ],
+    "posted_month": 9,
+    "seniority": "new-grad"
+  },
+  {
+    "id": "jp_069",
+    "title": "Cloud Engineer",
+    "company_type": "startup",
+    "required_skills": [
+      "Kubernetes",
+      "Python",
+      "Zero Trust Architecture",
+      "AWS",
+      "Cloud Security Posture Management (CSPM)"
+    ],
+    "nice_to_have_skills": [
+      "AI/ML Security",
+      "SIEM Tools",
+      "Docker",
+      "GitOps"
+    ],
+    "posted_month": 10,
+    "seniority": "mid"
+  },
+  {
+    "id": "jp_070",
+    "title": "Cloud Security Engineer",
+    "company_type": "enterprise",
+    "required_skills": [
+      "AI/ML Security",
+      "Kubernetes",
+      "Zero Trust Architecture",
+      "Python",
+      "SIEM Tools"
+    ],
+    "nice_to_have_skills": [
+      "Cloud Security Posture Management (CSPM)",
+      "Penetration Testing",
+      "Compliance Frameworks",
+      "Azure"
+    ],
+    "posted_month": 12,
+    "seniority": "senior"
+  }
+]

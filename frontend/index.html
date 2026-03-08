@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skill Futures</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #F3F4F6; }
+    .spinner { border: 3px solid #e5e7eb; border-top-color: #1B3A6B; border-radius: 50%; width: 28px; height: 28px; animation: spin 0.7s linear infinite; display: inline-block; vertical-align: middle; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { navy: '#1B3A6B', 'navy-light': '#2A4F8A' }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-navy text-white py-5 px-6 shadow-md">
+    <div class="max-w-5xl mx-auto">
+      <h1 class="text-2xl font-bold tracking-tight">Skill Futures</h1>
+      <p class="text-sm text-blue-200 mt-1">Don't just close any gap — close the <em>right</em> gap.</p>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-8">
+
+    <!-- ==================== SCREEN 1: INPUT ==================== -->
+    <section id="screen-input">
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-lg font-semibold text-gray-800 mb-1">Paste your resume</h2>
+        <p class="text-sm text-gray-500 mb-4">We'll extract your skills and compare them against current market demand.</p>
+
+        <textarea id="resume-input" rows="14"
+          class="w-full border border-gray-300 rounded-md p-3 text-sm font-mono text-gray-700 focus:outline-none focus:ring-2 focus:ring-navy focus:border-transparent resize-y"></textarea>
+
+        <div class="mt-4 flex flex-col sm:flex-row sm:items-end gap-4">
+          <div class="flex-1">
+            <label for="role-select" class="block text-sm font-medium text-gray-700 mb-1">Target Role</label>
+            <select id="role-select"
+              class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-navy">
+              <option>Cloud Security Engineer</option>
+              <option>DevSecOps Engineer</option>
+              <option>SOC Analyst</option>
+              <option>Cloud Engineer</option>
+            </select>
+          </div>
+          <button id="btn-analyze" onclick="analyze()"
+            class="bg-navy hover:bg-navy-light text-white font-medium px-6 py-2 rounded-md transition-colors text-sm">
+            Analyze My Skills
+          </button>
+        </div>
+
+        <div id="loading" class="hidden mt-4 flex items-center gap-2 text-sm text-gray-500">
+          <span class="spinner"></span> Analyzing resume and computing skill gaps…
+        </div>
+        <div id="error-msg" class="hidden mt-4 text-sm text-red-600"></div>
+      </div>
+    </section>
+
+    <!-- ==================== SCREEN 2: DASHBOARD ==================== -->
+    <section id="screen-dashboard" class="hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+        <!-- Left: Detected skills -->
+        <div class="bg-white rounded-lg shadow p-5">
+          <h2 class="text-base font-semibold text-gray-800 mb-3">Your Detected Skills</h2>
+          <div id="skills-list" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <!-- Right: Gap chart -->
+        <div class="lg:col-span-2 bg-white rounded-lg shadow p-5">
+          <h2 class="text-base font-semibold text-gray-800 mb-3">Skill Gaps by Demand</h2>
+          <div class="relative" style="height: 340px;">
+            <canvas id="gap-chart"></canvas>
+          </div>
+          <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+            <strong>Momentum Score</strong> — Higher score = more job postings require this skill AND demand is growing.
+            Scores combine how frequently a skill appears in postings (60%) with how recently those postings were made (40%).
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-6 text-center">
+        <button onclick="showScreen('screen-roadmap')"
+          class="bg-navy hover:bg-navy-light text-white font-medium px-6 py-2 rounded-md transition-colors text-sm">
+          See My Roadmap
+        </button>
+      </div>
+    </section>
+
+    <!-- ==================== SCREEN 3: ROADMAP ==================== -->
+    <section id="screen-roadmap" class="hidden">
+      <h2 class="text-lg font-semibold text-gray-800 mb-5">Your Priority Learning Roadmap</h2>
+      <div id="roadmap-cards" class="grid grid-cols-1 md:grid-cols-3 gap-5"></div>
+
+      <div class="mt-8 text-center">
+        <button onclick="startOver()"
+          class="border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium px-6 py-2 rounded-md transition-colors text-sm">
+          Start Over
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // ----------------------------------------------------------------
+    // Sample resume (hardcoded)
+    // ----------------------------------------------------------------
+    const SAMPLE_RESUME = `ALEX CHEN
+San Francisco, CA | alex.chen@email.com | linkedin.com/in/alexchen | github.com/alexchen
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of California, Berkeley — May 2024
+GPA: 3.7/4.0
+Relevant Coursework: Computer Networks, Operating Systems, Data Structures & Algorithms,
+Database Systems, Introduction to Cybersecurity, Software Engineering
+
+TECHNICAL SKILLS
+Languages: Python, Java, C, SQL, Bash Scripting, JavaScript
+Cloud & Infrastructure: AWS (EC2, S3, IAM basics), Linux Administration, Docker (basic)
+Networking & Security: TCP/IP, DNS, HTTP/HTTPS, Network Security fundamentals, Wireshark,
+  Nmap, basic firewall configuration
+Tools & Platforms: Git, GitHub, VS Code, Jira, Terraform (introductory), Jenkins (basic CI/CD)
+Frameworks: Flask, React (basic), REST APIs
+
+EXPERIENCE
+Cloud Security Intern — Meridian Technologies, San Jose, CA
+June 2023 – August 2023
+- Assisted the cloud security team in reviewing AWS IAM policies across 30+ accounts,
+  identifying 15 over-permissioned roles and recommending least-privilege remediations
+- Wrote Python scripts to automate daily log aggregation from CloudTrail, reducing
+  manual review time by 40%
+- Participated in incident response tabletop exercises and documented runbook updates
+  for the SOC team
+- Configured basic AWS Security Hub rules and helped triage low-severity findings
+
+IT Help Desk Technician — UC Berkeley Office of Information Technology
+September 2022 – May 2023
+- Provided Tier 1 support for 500+ students and faculty, resolving hardware, software,
+  and network connectivity issues
+- Documented troubleshooting procedures for common VPN and Wi-Fi authentication problems
+- Assisted with onboarding device provisioning and Active Directory account management
+
+PROJECTS
+Network Traffic Analyzer (Senior Capstone Project)
+- Built a Python-based packet analysis tool using Scapy to detect anomalous traffic patterns
+  on a simulated enterprise network
+- Implemented signature-based detection rules for common attack vectors (port scanning,
+  SYN floods) with a 92% detection rate on test data
+- Visualized traffic telemetry using Matplotlib dashboards; presented findings to a panel
+  of industry reviewers
+
+Secure File Sharing Application
+- Developed a Flask REST API with AES-256 encryption for file upload/download,
+  implementing token-based authentication with JWT
+- Deployed on AWS EC2 with Nginx reverse proxy; wrote GitHub Actions CI/CD pipeline
+  for automated testing and deployment
+- Conducted basic penetration testing using OWASP ZAP, identified and patched 3 XSS
+  vulnerabilities
+
+CERTIFICATIONS
+AWS Certified Cloud Practitioner — December 2023
+CompTIA Security+ — March 2024
+
+ACTIVITIES
+Member, Berkeley Cybersecurity Club — Participated in NCL and PicoCTF competitions
+Volunteer, Bay Area Code Camp — Taught introductory Python to high school students`;
+
+    document.getElementById('resume-input').value = SAMPLE_RESUME;
+
+    // ----------------------------------------------------------------
+    // State
+    // ----------------------------------------------------------------
+    let apiData = null;
+    let chartInstance = null;
+
+    const API = 'http://localhost:8000';
+
+    // ----------------------------------------------------------------
+    // Navigation
+    // ----------------------------------------------------------------
+    function showScreen(id) {
+      document.getElementById('screen-input').classList.add('hidden');
+      document.getElementById('screen-dashboard').classList.add('hidden');
+      document.getElementById('screen-roadmap').classList.add('hidden');
+      document.getElementById(id).classList.remove('hidden');
+    }
+
+    function startOver() {
+      if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
+      showScreen('screen-input');
+    }
+
+    // ----------------------------------------------------------------
+    // Analyze
+    // ----------------------------------------------------------------
+    async function analyze() {
+      const resume = document.getElementById('resume-input').value.trim();
+      const role = document.getElementById('role-select').value;
+      const loading = document.getElementById('loading');
+      const errorMsg = document.getElementById('error-msg');
+      const btn = document.getElementById('btn-analyze');
+
+      if (!resume) { errorMsg.textContent = 'Please paste a resume.'; errorMsg.classList.remove('hidden'); return; }
+
+      errorMsg.classList.add('hidden');
+      loading.classList.remove('hidden');
+      btn.disabled = true;
+      btn.classList.add('opacity-50');
+
+      try {
+        const res = await fetch(`${API}/analyze`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ resume_text: resume, target_role: role })
+        });
+        if (!res.ok) throw new Error(`Server error: ${res.status}`);
+        apiData = await res.json();
+        renderDashboard();
+        showScreen('screen-dashboard');
+      } catch (e) {
+        errorMsg.textContent = `Analysis failed: ${e.message}. Is the backend running on localhost:8000?`;
+        errorMsg.classList.remove('hidden');
+      } finally {
+        loading.classList.add('hidden');
+        btn.disabled = false;
+        btn.classList.remove('opacity-50');
+      }
+    }
+
+    // ----------------------------------------------------------------
+    // Render dashboard (Screen 2)
+    // ----------------------------------------------------------------
+    function renderDashboard() {
+      // Skills pills
+      const list = document.getElementById('skills-list');
+      list.innerHTML = apiData.extracted_skills.map(s =>
+        `<span class="inline-block bg-emerald-50 text-emerald-700 text-xs font-medium px-2.5 py-1 rounded-full border border-emerald-200">${esc(s)}</span>`
+      ).join('');
+
+      // Chart
+      const gaps = apiData.gaps_ranked.slice(0, 10);
+      const labels = gaps.map(g => g.skill);
+      const scores = gaps.map(g => g.momentum_score);
+      const colors = gaps.map(g =>
+        g.trend === 'rising' ? '#10B981' : g.trend === 'stable' ? '#3B82F6' : '#9CA3AF'
+      );
+
+      if (chartInstance) chartInstance.destroy();
+      const ctx = document.getElementById('gap-chart').getContext('2d');
+      chartInstance = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [{
+            label: 'Momentum Score',
+            data: scores,
+            backgroundColor: colors,
+            borderRadius: 4,
+            barThickness: 22,
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: { min: 0, max: 1, ticks: { stepSize: 0.2, font: { size: 11 } }, grid: { color: '#f0f0f0' } },
+            y: { ticks: { font: { size: 12 } }, grid: { display: false } }
+          },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                afterLabel: (ctx) => {
+                  const g = gaps[ctx.dataIndex];
+                  return `Trend: ${g.trend}  |  Frequency: ${g.frequency_pct}%`;
+                }
+              }
+            }
+          }
+        }
+      });
+
+      // Roadmap cards
+      renderRoadmap();
+    }
+
+    // ----------------------------------------------------------------
+    // Render roadmap (Screen 3)
+    // ----------------------------------------------------------------
+    function renderRoadmap() {
+      const container = document.getElementById('roadmap-cards');
+
+      container.innerHTML = apiData.top_gaps_roadmap.map((item, i) => {
+        const trendIcon = item.trend === 'rising' ? '↑ Rising' : item.trend === 'stable' ? '→ Stable' : '↓ Declining';
+        const trendColor = item.trend === 'rising' ? 'text-emerald-600' : item.trend === 'stable' ? 'text-blue-600' : 'text-gray-500';
+        const aiBadge = item.ai_powered
+          ? '<span class="text-[10px] font-medium bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">AI-powered</span>'
+          : '<span class="text-[10px] font-medium bg-gray-100 text-gray-500 px-1.5 py-0.5 rounded">Rule-based</span>';
+
+        const resources = (item.resources || []).map(r =>
+          `<li class="flex justify-between items-start gap-2">
+            <a href="${esc(r.url)}" target="_blank" rel="noopener" class="text-navy hover:underline text-sm leading-snug">${esc(r.name)}</a>
+            <span class="text-[11px] text-gray-400 whitespace-nowrap">${esc(r.time_estimate)}</span>
+          </li>`
+        ).join('');
+
+        return `
+        <div class="bg-white rounded-lg shadow p-5 flex flex-col relative">
+          <div class="absolute top-3 right-3">${aiBadge}</div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-bold text-white bg-navy px-2 py-0.5 rounded">#${i + 1}</span>
+            <h3 class="font-semibold text-gray-800 text-sm">${esc(item.skill)}</h3>
+          </div>
+          <div class="flex items-center gap-3 text-xs mb-3">
+            <span class="bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Score: ${item.momentum_score.toFixed(2)}</span>
+            <span class="${trendColor} font-medium">${trendIcon}</span>
+          </div>
+          <p class="text-sm text-gray-600 mb-4 flex-1">${esc(item.why_it_matters)}</p>
+          <ul class="space-y-2 border-t pt-3">${resources}</ul>
+        </div>`;
+      }).join('');
+    }
+
+    // ----------------------------------------------------------------
+    // Util
+    // ----------------------------------------------------------------
+    function esc(s) {
+      const d = document.createElement('div');
+      d.textContent = s;
+      return d.innerHTML;
+    }
+  </script>
+</body>
+</html>
