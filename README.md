@@ -33,7 +33,7 @@ The result: a prioritized, actionable plan — not a flat list of everything you
 ### Run
 
 ```bash
-git clone <repo-url> && cd skill-futures
+git clone https://github.com/micrubin1/palo_alto_case_challenge && cd palo_alto_case_challenge
 echo "GEMINI_API_KEY=your_key_here" > .env
 pip install -r requirements.txt
 python -m uvicorn backend.main:app --port 8000
@@ -52,7 +52,7 @@ python -m pytest backend/tests/ -v
 ## Project Structure
 
 ```
-skill-futures/
+palo_alto_case_challenge/
 ├── backend/
 │   ├── main.py           # FastAPI app — 3 endpoints
 │   ├── scorer.py         # Momentum scoring engine + gap analysis
